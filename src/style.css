@@ -1,0 +1,106 @@
+  .chatdiv {
+    margin: 100px auto 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: #ebebe9;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .chatdiv ul {
+    padding: 10px;
+  }
+
+  .chatdiv li {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .chatdiv li div {
+    position: relative;
+    border-radius: 7px;
+    background-color: #a6e860;
+    padding: 6px 10px 8px 10px;
+    z-index: 1;
+    display:inline-block;
+  }
+
+  .chatdiv li div img{
+    max-width:600px;
+    max-height:600px;
+  }
+
+  .chatdiv .textLeft div {
+    background-color: white;
+  }
+
+  .chatdiv li.textLeft:before {
+    box-sizing: border-box;
+    position: relative;
+    left: -10px;
+    top: 9px;
+  }
+
+  .chatdiv li.textLeft div:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right: 8px solid white;
+    position: absolute;
+    top: 8px;
+    left: -16px;
+  }
+
+  .chatdiv li.textRight:after {
+    box-sizing: border-box;
+    position: relative;
+    right: -10px;
+    top: 9px;
+  }
+
+  .chatdiv li.textRight div:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 8px solid #a6e860;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .textRight {
+    text-align: right;
+  }
+
+  .sendDiv {
+    margin: 0 auto 100px auto;
+    width: 800px;
+    height: 20%;
+    background-color: #ebebe9;
+  }
+
+  .sendDiv input{
+    width:680px;
+    height:20px;
+    padding:8px 7px;
+    font:16px arial;
+    border:1px solid #d8d8d8;
+    border-bottom:1px solid #ccc;
+  }
+
+  .sendDiv button{
+    color:white;
+    background-color:#38f;
+    width:100px;
+    height:38px;
+    font-size:16px;
+    border:0;
+}
